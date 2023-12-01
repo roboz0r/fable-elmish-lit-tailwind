@@ -1,0 +1,42 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Website", "src\Website.fsproj", "{F853E873-BDD3-48F2-A77A-FFC9A7400FB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{AAFA033E-1817-4AF4-A8E9-04EE17E8781A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		global.json = global.json
+		package.json = package.json
+		paket.dependencies = paket.dependencies
+		README.md = README.md
+		tailwind.config.cjs = tailwind.config.cjs
+		tsconfig.json = tsconfig.json
+		tsconfig.node.json = tsconfig.node.json
+		vite.config.ts = vite.config.ts
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{F0AFA658-CD62-4328-826D-29A88F56615A}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F853E873-BDD3-48F2-A77A-FFC9A7400FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F853E873-BDD3-48F2-A77A-FFC9A7400FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F853E873-BDD3-48F2-A77A-FFC9A7400FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F853E873-BDD3-48F2-A77A-FFC9A7400FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

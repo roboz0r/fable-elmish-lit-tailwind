@@ -1,0 +1,11 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: net8.0
+nuget FSharp.Core 8.0.100 content: none
+nuget Fable.Browser.Dom 2.15.0
+nuget Fable.Core 3.7.1
+nuget Fable.Elmish.Browser 4.0.3
+nuget Fable.Fetch 2.6.0
+nuget Fable.Lit 1.4.2
+nuget Fable.Lit.Elmish 1.4.0

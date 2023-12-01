@@ -1,0 +1,35 @@
+{
+  "name": "fable-elmish-lit-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "clean:build": "rimraf build",
+    "clean:dist": "rimraf dist",
+    "clean": "npm run clean:build && npm run clean:dist",
+    "dev:css": "tailwindcss -i ./src/App.css -o ./build/App.css --watch",
+    "dev:fable": "dotnet fable watch ./src/ -o ./build/ -s",
+    "dev:serve": "vite",
+    "dev": "concurrently -c \"red,green,yellow\" npm:dev:serve npm:dev:fable npm:dev:css",
+    "build:css": "tailwindcss -i ./src/App.css -o ./build/App.css",
+    "build:fable": "dotnet fable ./src/ -o ./build/ --run vite build",
+    "build": "npm run clean && npm run build:css && npm run build:fable",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lit": "3.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "0.5.7",
+    "@tailwindcss/typography": "0.5.10",
+    "@types/node": "20.10.1",
+    "autoprefixer": "10.4.16",
+    "concurrently": "8.2.2",
+    "daisyui": "4.4.17",
+    "postcss": "8.4.31",
+    "rimraf": "5.0.5",
+    "tailwindcss": "3.3.5",
+    "typescript": "5.3.2",
+    "vite": "5.0.4"
+  }
+}
