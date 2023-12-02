@@ -17,6 +17,7 @@ npm install
 dotnet tool restore
 dotnet paket install
 ```
+^ note that `dotnet tool restore` is only needed due to https://github.com/dotnet/sdk/issues/37272
 
 ## Everyday development
 
